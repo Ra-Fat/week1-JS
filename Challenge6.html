@@ -8,6 +8,8 @@
 <body>
     <script>
         const votes = ["A", "B", "A", "C", "B", "A", "C", "B"];
+        // const votes = [];
+
 
         function simulateVotingSystem(votes) {
             let countA = 0, countB = 0, countC = 0;
@@ -32,6 +34,8 @@
                 return "A and B are both winners ";
             }else if(countA == countC && countA > countB) {
                 return "A and C are both winners ";
+            }else{
+                return "There is not vote ye";
             }
         }
         console.log(simulateVotingSystem(votes));
