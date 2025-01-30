@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function challenge1(width, height) { 
+            let rectangleString = '';
+
+            for (let i = 0; i < height; i++) {
+                for (let j = 0; j < width; j++) {
+                    rectangleString += '*';
+                }
+            rectangleString += '\n';
+            }
+
+            console.log(rectangleString);
+        }
+        // challenge1(3, 4);
+        challenge1(5, -2);
+        // challenge1(3, 4);
+
+    </script>
+</body>
+</html>

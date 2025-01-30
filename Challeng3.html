@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calculateAverageGrade(grades) {
+        let sum = 0;
+        if (grades.length === 0) {
+            return 0;
+  }     
+
+        for (let i = 0; i < grades.length; i++) {
+            sum += grades[i];
+        }
+
+        return sum / grades.length;
+    }
+
+        // const studentGrades = [85, 90, 78, 92];
+        // const studentGrades = [10,20,30];
+        const studentGrades = [];
+
+        const averageGrade = calculateAverageGrade(studentGrades);
+        console.log("Average Grade:", averageGrade);
+
+    </script>
+    
+</body>
+</html>
